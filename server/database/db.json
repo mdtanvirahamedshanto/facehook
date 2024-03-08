@@ -63,7 +63,8 @@
         }
       ],
       "likes": [
-        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
+        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56",
+        "b0124b3e-f0c1-458d-b220-8e8ac94ffaef"
       ],
       "createAt": "2024-02-24T12:17:09.169Z"
     },
@@ -263,7 +264,9 @@
         "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
       },
       "comments": [],
-      "likes": [],
+      "likes": [
+        "b0124b3e-f0c1-458d-b220-8e8ac94ffaef"
+      ],
       "createAt": "2024-02-25T06:03:47.813Z"
     },
     {
@@ -460,6 +463,20 @@
       "comments": [],
       "likes": [],
       "createAt": "2024-02-25T07:16:53.349Z"
+    },
+    {
+      "id": "89cda13a-b64c-4083-8f19-45f8870a8dae",
+      "content": "Hello Programmer",
+      "image": null,
+      "postType": "text",
+      "author": {
+        "id": "b0124b3e-f0c1-458d-b220-8e8ac94ffaef",
+        "name": "Md Tanvir Ahamed Shanto",
+        "avatar": "uploads/avatar/avatar-1709921889556-39286538.png"
+      },
+      "comments": [],
+      "likes": [],
+      "createAt": "2024-03-08T18:19:01.966Z"
     }
   ],
   "comments": [],
@@ -514,6 +531,14 @@
       "avatar": "uploads/avatar/avatar-1708802845791-219561000.png",
       "email": "rambo@email.com",
       "bio": "I am Rambo!!!"
+    },
+    {
+      "id": "b0124b3e-f0c1-458d-b220-8e8ac94ffaef",
+      "password": "$2b$08$J3FsP274LerOo5vYRh/ehulImKC3nU0uXjFrh6bY0gEHMdseKSXVG",
+      "firstName": "Md Tanvir Ahamed",
+      "lastName": "Shanto",
+      "avatar": "uploads/avatar/avatar-1709921889556-39286538.png",
+      "email": "shanto@gmail.com"
     }
   ]
 }

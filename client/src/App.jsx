@@ -1,18 +1,27 @@
-import { Route, Routes } from "react-router-dom";
-import HomePage from "./components/pages/HomePage";
-import LoginPage from "./components/pages/LoginPage";
-import NotFoundPage from "./components/pages/NotFoundPage";
-import ProfilePage from "./components/pages/ProfilePage";
-import RegistrationPage from "./components/pages/RegistrationPage";
+import {Routes, Route} from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import NotFoundPage from './pages/NotFoundPage';
+import ProfilePage from './pages/ProfilePage';
+import RegistrationPage from './pages/RegistrationPage';
 
-export default function App() {
+import PrivateRoutes from './routes/PrivateRoutes';
+
+function App() {
+
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} exact />
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/profile" element={<ProfilePage />} />
-      <Route path="/register" element={<RegistrationPage />} />
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
-  );
+    <>
+      <Routes>
+        <Route element={<PrivateRoutes />}>
+          <Route element={<HomePage />} path="/" exact />
+          <Route element={<ProfilePage />} path="/me" />
+        </Route>
+        <Route element={<LoginPage />} path="/login" />
+        <Route element={<RegistrationPage />} path="/register" />
+        <Route element={<NotFoundPage />} path="*" />
+      </Routes>
+    </>
+  )
 }
+
+export default App
